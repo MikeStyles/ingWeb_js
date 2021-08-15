@@ -1,8 +1,8 @@
 function bisiesto() {
-    var nariz = document.getElementById("year");
+    var year = document.getElementById("year");
     var boton = document.getElementById("boton");
     boton.addEventListener("click", (e) => {
-      n = nariz.value;
+      n = year.value;
       if ((n % 4 == 0 && n % 100 != 0) || n % 400 == 0) {
         console.log("Es bisiesto");
         document.getElementById("etiqueta").innerHTML = "Es bisiesto";
